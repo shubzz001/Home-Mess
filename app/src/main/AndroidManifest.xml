@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HomeMess"
+        tools:replace="android:theme"
+        tools:targetApi="31"
+        android:enableOnBackInvokedCallback="true">
+        <activity
+            android:name="com.example.homemess.customerFoodPanel.CustomerForgotpassword"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.customerFoodPanel.PendingOrders"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.customerFoodPanel.OrderDish"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.customerFoodPanel.CustomerPhoneSendOTP"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.customerFoodPanel.CustomerPaymentOTP"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.customerFoodPanel.CustomerPayment"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.customerFoodPanel.CustomerPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.customerFoodPanel.CustomerOnlinePayment"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.messFoodPanel.MessPreparedOrderView"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.messFoodPanel.Mess_order_dishes"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.messFoodPanel.MessOrdertobePrepareView"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.messFoodPanel.MessPreparedOrder"
+            android:exported="false" />
+        <activity
+            android:name="com.example.homemess.messFoodPanel.MessOrderTobePrepared"
+            android:exported="false" />
+        <activity
+            android:name=".messFoodPanel.UpdateDelete_Dish"
+            android:exported="false" />
+        <activity
+            android:name=".messFoodPanel.mess_postFood"
+            android:exported="false" />
+        <activity
+            android:name=".Delivery_sendotp"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryFoodPanel_BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".Delivery_VerifyPhone"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerFoofPanel_BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".sendotp"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyPhone"
+            android:exported="false" />
+        <activity
+            android:name=".Messsendotp"
+            android:exported="false" />
+        <activity
+            android:name=".MessForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".MessFoodPanel_BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".MessVerifyPhone"
+            android:exported="false" />
+        <activity
+            android:name=".Delivery_Registration"
+            android:exported="false" />
+        <activity
+            android:name=".Delivery_Loginphone"
+            android:exported="false" />
+        <activity
+            android:name=".Delivery_Login"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" />
+        <activity
+            android:name=".Loginphone"
+            android:exported="false" />
+        <activity
+            android:name=".MessRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".Messloginphone"
+            android:exported="false" />
+        <activity
+            android:name=".Messlogin"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ui.login.Delivery_Registration" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_delivery_registration"/> -->
+        <activity
+            android:name=".ChooseOne"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false" />
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.homemess.SendNotification.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.example.homemess.SendNotification.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+<!--        <meta-data-->
+<!--            android:name="preloaded_fonts"-->
+<!--            android:resource="@array/preloaded_fonts" />-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7744919851369402~6396579234"/>
+
+
+    </application>
+<!--            <meta-data-->
+<!--                android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--                android:value="ca-app-pub-7744919851369402~6396579234"/>-->
+
+</manifest>

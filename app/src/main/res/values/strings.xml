@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">HomeMess</string>
+    <string name="title_home">HomeMess</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="find_homemade_food_around_you_or_offer_your_own">Find homemade food around you or offer your own !</string>
+    <string name="connect_as_chef">Connect As Chef</string>
+    <string name="connect_as_delivery_person">Connect As Delivery Person</string>
+    <string name="connect_as_customer">Connect As Customer</string>
+
+    <string-array name="State">
+        <item>Maharashtra</item>
+        <item>Madhyapradesh</item>
+    </string-array>
+
+    <!--        <string-array name="City">-->
+    <!--            <item >Pune</item>-->
+    <!--            <item >Primpri Chinchwad</item>-->
+    <!--            <item >Satara</item>-->
+    <!--            <item >Mumbai</item>-->
+    <!--        </string-array>-->
+
+    <string-array name="shipper">
+        <item>Shipper 1</item>
+        <item>Shipper 2</item>
+    </string-array>
+
+    <string-array name="DishName">
+        <item>BREAKFAST-7.30 AM TO 10.15 AM</item>
+        <item>LUNCH  -12.30PM TO 2.30PM </item>
+        <item>DINNER -7.30PM TO 9.30PM</item>
+
+    </string-array>
+    <string name="title_activity_delivery_registration">Delivery_Registration</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
